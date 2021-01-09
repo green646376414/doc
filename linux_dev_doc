@@ -1,0 +1,24 @@
+UnCompress
+
+tar  -zxvf   ***.tar.gz
+
+Idea  create  desktop shortcut 
+
+[Desktop Entry]
+Name=IntelliJ IDEA
+Comment=IntelliJ IDEA
+Exec=/usr/local/ideaIU/bin/idea.sh
+Icon=/usr/local/ideaIU/bin/idea.png
+Terminal=false
+Type=Application
+Categories=Developer;
+
+set jdk env 
+
+vim /etc/profile
+
+export JAVA_HOME=/home/g/Downloads/jdk-15.0.1
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+
+source /etc/profile
